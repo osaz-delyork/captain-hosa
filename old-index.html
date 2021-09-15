@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/@pqina/flip/dist/flip.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<section>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top olu-navbar">
+        <div class='container'>
+        <a class="navbar-brand" href="#">
+            <img src="/assets/img/brand-logo.png" alt="logo"  width="40px" height="40px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span> -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Itinerary">Itinerary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#protocols">COVID-19 Protocols</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#player">Coronation Song</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQs</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+      </nav>
+    <!-- End Navigation -->
+
+<div class="class-wrap-position-fix">
+    <section class="countdown-wrapper">
+        <div class="overlay"></div>
+
+        <div class="countdown-info">
+            <div class="brand">                   
+            </div>
+            <!-- countdown -->
+            <div class="countdown">
+                <span class="countdown-text">COUNT</span>
+                 <!-- <div class="clock" id="clock1"></div> -->
+                 <div class="tick" data-did-init="handleTickInit">
+
+                    <div data-repeat="true" data-layout="horizontal fit" data-transform="preset(d, h, m, s) -> delay">
+                
+                        <div class="tick-group">
+                
+                            <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+                
+                                <span data-view="flip"></span>
+                
+                            </div>
+                
+                            <span data-key="label" data-view="text" class="tick-label"></span>
+                
+                        </div>
+                
+                    </div>
+                
+                </div>
+                <span class="countdown-text">DOWN</span>
+            </div>
+            <h2>Coronation of the 21st olu of warri</h2>
+            <p class="sub-title">His Royal Majesty</p>
+            <p class="king-name">Omoba Prince Tsola Emiko</p>
+        </div>
+    </section>
+</div>
+
+    <!-- Welcom Section -->
+    <section id="welcome" class="welcome py-5">
+        <div class="container my-5">
+             <div class="row">
+                 <div class="col-sm-12 col-md-6">
+                     <div class="img-container mb-3">
+                        <!-- <img class="img-fluid" src="/assets/img/omoba.jpeg" alt="omoba" /> -->
+                     </div>
+                 </div>
+                 <div class="col-sm-12 col-md-6">
+                     <h3 class="text-black text-black text-uppercase text" style="margin-bottom: 30px; font-weight:bold;">WELCOME TO THE OFFICIAL WEBSITE FOR THE CORONATION OF THE OLU OF WARRI</h3>
+                     <p class="faq-description text">The Olu Of Warri is the paramount traditional ruler of the Warri Kingdom
+and leader Of All Itsekiri People Living In Nigeria and in the diaspora. He is the custodian of a shared heritage that traces its history back over hundreds of years. He is a figure that represents and embodies the pride and flamboyance of what is a celebrated people of the Niger Delta region.</p>
+                     <p class="faq-description text">
+                      As Olu of Warri, Omoba Tsola Emiko is a monarch that stands at the intersection of what is our highly revered traditional institutions and the dynamism of a rapidly evolving information age, essentially serving as a bridge between the old and the new. He will indeed be the people’s monarch.  
+                     </p>
+                     <p class="faq-description text">Come Saturday, August 21, 2021, Omoba Tsola Emiko Will Be Crowned the new Olu of Warri at The Royal Palace at Ode Itsekiri, Warri, Delta State</p>
+                     <p class="faq-description text">As you plan to grace the coronation ceremonies with your esteemed presence, please acquaint yourself with some of the important and helpful information that will help make your attendance a seamless and enjoyable one.</p>
+                     <p class="faq-description text">We will add any updates or further important announcements here as necessary. </p>
+                 </div>
+             </div>
+        </div>
+        
+    </section>
+    <section class="culture">
+        <!-- class="container my-5" -->
+        <div >
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class=" mb-3">
+                       <img class="img-fluid ogiame" src="/assets/img/the-culture.png" alt="ogiame"/>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 px-5 culture__content">
+                    <h3 class="text-black text-black text-uppercase sub-title">THE</h3>
+                    <h1 class="title">CULTURE</h1>
+                    <div class="my-5 p-2 culture__content-body">
+                        <p class="faq-description text-justify ">
+                            The Olu of Warri also known as Ogiame rules over warri and all of Itsekiri communities across local government areas in Delta state and Edo state.
+                            The Olu of Warri is a first class traditional ruler and is overlord of all Itsekiri people both in Nigeria and the Diaspora.
+                        </p>
+                        <br/>
+                        <p class="faq-description text-justify">
+                            <i>
+                                The city is known nationwide for its unique Pidgin English, which is very different when spoken, compared to other parts of the country because
+                                Warri Pigdin is more complex to understand, but very interesting. The slangs makes Warri Pidgin English very captivating
+                            </i>
+                        </p>
+                    </div>
+                    <div class="my-5 p-2 culture__content-body">
+                        <h1 class="title mt-5 mb-5" style="font-size: 7rem;">Aghan Do,</h1>
+                        <p class="faq-description text-justify ">
+                            We have put together this guide to help make your stay with us more comfortable and enjoyable, detailing places of interest and things to do.
+                            There will be additional information or assistance please do not hesitate to ask any of the concierge. We are keen to hear what guests think of
+                            their time here, but this does not mean you should have problems until the end of your stay. If you feel your needs are not met, please let us
+                            know as soon as possible
+                        </p>
+                        <br/>
+                        <p class="faq-description text-justify">
+                            <i>
+                                Enjoy your stay.
+                            </i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+    <!-- End Welcome Section -->
+
+    <section id="Itinerary" class='position-relative'>
+        <!-- <div class="title-wrapper-flex"> -->
+            <h1 class="text-black d-flex justify-content-center  text-black text-uppercase my-5 py-5 title-border">
+                Coronation Itinerary
+            </h1>
+        <!-- </div> -->
+        
+<div class="container">
+        <div class="row pb-5 mb-5">
+           <div class="col-lg-4 col-12 align-items-center d-flex flex-column">
+             <div class="itenary-box-container">
+                <div class="header d-flex justify-content-between px-4">
+                    <div class="itenary-text-head">
+                        DAY ONE - Arrival
+                    </div>
+
+                    <div class="itenary-date">
+                        Thursday, August 19th 2021
+                    </div>
+
+                </div>
+
+                <div class="itenary-card-body d-flex justify-content-between p-4">
+                    <div class="itenary-description">
+                        Arrival of Guests
+                    </div>
+
+                    <div class="itenary-timeline">
+                        --:--
+                    </div>
+                </div>
+
+             </div>
+           </div>
+
+           <div class="col-lg-4 col-12 align-items-center  d-flex flex-column">
+            <div class="itenary-box-container">
+                <div class="header d-flex justify-content-between px-4">
+                    <div class="itenary-text-head">
+                        DAY TWO - Pre-coronation Events
+
+                    </div>
+
+                    <div class="itenary-date">
+                        Friday, August 20th 2021
+                    </div>
+
+                </div>
+
+                <div class="itenary-card-body d-flex justify-content-between p-4">
+                    <div class="itenary-description">
+                        Praise, Prayer, & Prophecy Crusade
+                    </div>
+
+                    <div class="itenary-timeline">
+                        13:00
+                    </div>
+                </div>
+
+             </div>
+         </div>
+
+         <div class="col-lg-4 col-12 align-items-center  d-flex flex-column">
+            <div class="itenary-box-container">
+                <div class="header d-flex justify-content-between px-4">
+                    <div class="itenary-text-head">
+                        DAY THREE - Coronation Day
+                    </div>
+
+                    <div class="itenary-date">
+                        Saturday, August 21st 2021
+                    </div>
+
+                </div>
+                <div class="p-4">
+                    <!-- <div class="itenary-card-body d-flex justify-content-between">
+                        <div class="itenary-description">
+                            Early Breakfast
+                        </div>
+    
+                        <div class="itenary-timeline">
+                            06:30
+                        </div>
+                    </div> -->
+
+                    <div class="itenary-card-body d-flex justify-content-between">
+                        <div class="itenary-description">
+                            Guests leave for Jetty
+                        </div>
+    
+                        <div class="itenary-timeline">
+                            07:30
+                        </div>
+                    </div>
+
+                    <div class="itenary-card-body d-flex justify-content-between">
+                        <div class="itenary-description">
+                            Boat Rides to the Island
+                        </div>
+    
+                        <div class="itenary-timeline">
+                            08:00
+                        </div>
+                    </div>
+                    <div class="itenary-card-body d-flex justify-content-between">
+                        <div class="itenary-description">
+                            Boat Regatta 
+                        </div>
+    
+                        <div class="itenary-timeline">
+                            08:00
+                        </div>
+                    </div>
+
+                    <div class="itenary-card-body d-flex justify-content-between">
+                        <div class="itenary-description">
+                            Coronation
+                        </div>
+    
+                        <div class="itenary-timeline">
+                            11:00
+                        </div>
+                    </div>
+
+                    <div class="itenary-card-body d-flex justify-content-between">
+                        <div class="itenary-description">
+                            Royal Banquet
+                        </div>
+    
+                        <div class="itenary-timeline">
+                            19:00
+                        </div>
+                    </div>
+                   
+                </div>
+             </div>
+         </div>
+
+        <div class="col-lg-4 mx-auto col-12 align-items-center  d-flex flex-column">
+            <div class="itenary-box-container">
+                <div class="header d-flex justify-content-between px-4">
+                    <div class="itenary-text-head">
+                        DAY FOUR ― Thanksgiving and Departures
+
+                    </div>
+
+                    <div class="itenary-date">
+                        Sunday, August 22nd 2021
+
+                    </div>
+
+                </div>
+                <div class="p-4">
+                    <div class="itenary-card-body d-flex justify-content-between">
+                        <div class="itenary-description">
+                            Thanksgiving Church Service
+                        </div>
+    
+                        <div class="itenary-timeline">
+                            10:00
+                        </div>
+                    </div>
+
+                    <div class="itenary-card-body d-flex justify-content-between">
+                        <div class="itenary-description">
+                            Reception Lunch
+                        </div>
+    
+                        <div class="itenary-timeline">
+                            12:00
+                        </div>
+                    </div>
+
+                    <div class="itenary-card-body d-flex justify-content-between">
+                        <div class="itenary-description">
+                            Guest Departure
+                        </div>
+    
+                        <div class="itenary-timeline">
+                            2:00
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        </div>
+    </div>
+
+   
+
+    </section>
+
+
+     <div class="  padding-y-50">
+        <section class="position-relative w-100 mt-5 pt-5">
+    
+        <div class="accomodation container text-black mx-auto">
+                <h1 class="text-black d-flex justify-content-center title-border mb-5">ACCOMMODATION</h1>
+        <!-- <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"><p>S/N</p></th>
+                <th scope="col"><p>Hotels</p></th>
+                <th scope="col"><p>Time to Warri Airport  </p></th>
+                <th scope="col"><p>Time to Asaba Airport</p></th>
+                <th scope="col"> <p>Time to Benin Airport</p></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><h4>1</h4></th>
+                <td><h4>Carlaw Guest House</h4></td>
+                <td><h4>31 minutes</h4></td>
+                <td><h4>2 hours 59 minutes</h4></td>
+                <td><h4>2 hours 48 minutes</h4> </td>
+              </tr>
+              <tr>
+                <th scope="row"><h4>2</h4></th>
+                <td><h4>Peemos Place</h4></td>
+                <td><h4>34 minutes </h4></td>
+                <td><h4>2 hours 57 minutes</h4></td>
+                <td><h4>2 hours 8 minutes</h4> </td>
+              </tr>
+              <tr>
+                <th scope="row"><h4>3</h4></th>
+                <td><h4>Siro Hotel </h4></td>
+                <td><h4>28 minutes</h4></td>
+                <td><h4>2 hours 56 minutes</h4></td>
+                <td><h4>2 hours 48 minutes</h4> </td>
+              </tr>
+              <tr>
+                <th scope="row"><h4>4</h4></th>
+                <td><h4>Bon Hotel</h4></td>
+                <td><h4>15 minutes</h4></td>
+                <td><h4>2 hours 59 minutes</h4></td>
+                <td><h4>2 hours 48 minutes</h4> </td>
+              </tr>
+              <tr>
+                <th scope="row"><h4>5</h4></th>
+                <td><h4>Bon Hotel Hyatti</h4></td>
+                <td><h4>15 minutes </h4></td>
+                <td><h4>2 hours 41 minutes</h4></td>
+                <td><h4>2 hours 44 minutes</h4> </td>
+              </tr>
+    
+              <tr>
+                <th scope="row"><h4>6</h4></th>
+                <td><h4>PK Guest House</h4></td>
+                <td><h4>32 minutes </h4></td>
+                <td><h4>2 hours 53 minutes</h4></td>
+                <td><h4>2 hours 48 minutes</h4> </td>
+              </tr>
+    
+              <tr>
+                <th scope="row"><h4>7</h4></th>
+                <td><h4>Park Royale Hotel</h4></td>
+                <td><h4>29 minutes </h4></td>
+                <td><h4>2 hours 51 minutes</h4></td>
+                <td><h4>2 hours 54 minutes</h4> </td>
+              </tr>
+              <tr>
+                <th scope="row"><h4>8</h4></th>
+                <td><h4>The Bridgeview Hotel</h4></td>
+                <td><h4>28 minutes </h4></td>
+                <td><h4>2 hours 48 minutes</h4></td>
+                <td><h4>2 hours 42 minutes</h4> </td>
+              </tr>
+            </tbody>
+          </table> -->
+
+          <div class="container text-center">
+              <p class="faq-description">If you have any issues with your hotel bookings, kindly contact our concierge team</p>
+              <p class="faq-description">Rooms are available for check-in after <b>2:00 p. m.</b> on the day of your arrival, unless prior arrangements have been made.</p>
+              <p class="faq-description">We respectfully request that guests check out and vacate their rooms before <b>10 a. m.</b> on departure day, otherwise, there may be additional charges.</p>
+              <p class="faq-description"></p>
+              <p class="faq-description">We are happy to assist with the storage of your luggage, should your travel plans require a later departure. Be sure to inform us when you will be collecting it so we can get it available to you.</p>
+          </div>
+
+          <div class="text-center mx-auto mt-3" style="max-width: 400px;">
+               <h3 style="color: var(--wine); margin-top: 1.5rem">The Concierge Hotlines</h3>
+               <p class="faq-description" style="text-align: center !important;">Please contact us for any assistance!</p>
+               <table class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th  style="font-size: 1.5rem;" scope="col">Name</th>
+                    <th  style="font-size: 1.5rem;" scope="col">Phone Number</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="faq-description" scope="row">Ugo Ogadi</th>
+                    <td class="faq-description">+234 817 704 1936</td>
+                  </tr>
+                  <tr>
+                    <th class="faq-description" scope="row">Jumoke Olatunji</th>
+                    <td class="faq-description">+234 802 442 2878</td>
+                  </tr>
+                  <tr>
+                    <th class="faq-description" scope="row">Obehi Anuge</th>
+                    <td class="faq-description">+234 806 415 1335</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+
+          </div>
+
+          </section>
+    </div>
+
+
+    <section id="travel" class="travel">
+        <div class="my-5 travel-banner">
+            <img src="/assets/img/hit-the-road.png" />
+        </div>
+
+        <div class="container py-5">
+            <!-- <hr class="mb-5" /> -->
+            <h1 class="my-3 text-black d-flex justify-content-center title-border mb-5 travel-logistics position-relative">TRAVEL LOGISTICS</h1>
+            <p class="faq-description">Buses will be available to transport attendees from hotels to the jetty, while boats will convey them to Ode Itsekiri where the coronation will take place. Transportation back to the hotel will be seamless.</p>
+        </div>
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 mb-2">
+                    <div class="img-container mb-3" style="width: 100%;">
+                       <img class="img-fluid" src="/assets/img/warri-airport-map.png" alt="warri airport map" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 pl-5">
+                    <h3 class="text-black text-black text-uppercase title">TRAVEL TIMES <span>FROM</span>  <br/> WARRI AIRPORT</h3>
+                    <div style="max-width: 300px;">
+                        <div class="itenary-card-body d-flex justify-content-between">
+                            <div class="itenary-description">
+                              to Delta Boat Yard
+                            </div>
+        
+                            <div class="itenary-timeline">
+                             :   24 mins
+                            </div>
+                        </div>
+                        <div class="itenary-card-body d-flex justify-content-between">
+                            <div class="itenary-description">
+                              to Warri Club
+                            </div>
+        
+                            <div class="itenary-timeline">
+                             :   24 mins
+                            </div>
+                        </div>
+                        <div class="itenary-card-body d-flex justify-content-between">
+                            <div class="itenary-description">
+                              to Naval Dock yard
+                            </div>
+        
+                            <div class="itenary-timeline">
+                             :   26 mins
+                            </div>
+                        </div>
+                        <div class="itenary-card-body d-flex justify-content-between">
+                            <div class="itenary-description">
+                              to Carlaw Guest House
+                            </div>
+        
+                            <div class="itenary-timeline">
+                             :   27 mins
+                            </div>
+                        </div>
+                        <div class="itenary-card-body d-flex justify-content-between">
+                            <div class="itenary-description">
+                             to Peemos
+                            </div>
+        
+                            <div class="itenary-timeline">
+                             :   29 mins
+                            </div>
+                        </div>
+                        <div class="itenary-card-body d-flex justify-content-between">
+                            <div class="itenary-description">
+                             to Seero Hotel
+                            </div>
+        
+                            <div class="itenary-timeline">
+                             :   33 mins
+                            </div>
+                        </div>
+                        <div class="itenary-card-body d-flex justify-content-between">
+                            <div class="itenary-description">
+                             to Bon Delta
+                            </div>
+        
+                            <div class="itenary-timeline">
+                             :   15 mins
+                            </div>
+                        </div>
+                        <div class="itenary-card-body d-flex justify-content-between">
+                            <div class="itenary-description">
+                             to Bon Hyatt
+                            </div>
+        
+                            <div class="itenary-timeline">
+                             :   15 mins
+                            </div>
+                        </div>
+                        <div class="itenary-card-body d-flex justify-content-between">
+                            <div class="itenary-description">
+                             to Guest House
+                            </div>
+        
+                            <div class="itenary-timeline">
+                             :   27 mins
+                            </div>
+                        </div>
+                        <div class="itenary-card-body d-flex justify-content-between">
+                            <div class="itenary-description">
+                             to Park Royal
+                            </div>
+        
+                            <div class="itenary-timeline">
+                             :   26 mins
+                            </div>
+                        </div>
+                        <div class="itenary-card-body d-flex justify-content-between">
+                            <div class="itenary-description">
+                             to Bridge View
+                            </div>
+        
+                            <div class="itenary-timeline">
+                             :   26 mins
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <section id="protocols" class="w-100 pt-5 position-relative bg-coronation pb-5">
+
+        <div class="container text-black mx-auto">
+            
+            <div>
+                <h1 class="text-black d-flex justify-content-center title-border">COVID-19 PROTOCOLS</h1>
+                <h3 class="my-5 text-center"  style="color: var(--wine);">COVID-19 protocols will be strictly enforced throughout the events.</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-12 mt-5 pt-5">
+                        <img src='assets/img/wear-mask.png' class="mx-lg-3 mb-3 mr-lg-n3 mx-auto logo-position d-flex" height="50px" width="50px" />
+                        <h3 class="mb-3 d-flex justify-content-lg-start justify-content-center">WEAR A FACEMASK</h3>
+                        <p class="faq-description">Wear a mask over your nose and mouth at all times.
+                            You can cough or sneeze into your mask. Put on a new, clean mask as soon as possible and wash your hands.
+
+                             </p>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mt-5 pt-5">
+                        <img src='assets/img/social-distancing.png' class="mx-lg-3 mb-3 mr-lg-n3 mx-auto logo-position d-flex" height="50px" width="50px" />
+                        <h3 class="mb-3 d-flex justify-content-lg-start justify-content-center">SOCIAL DISTANCING</h3>
+                        <p class="faq-description">Stay at least 6 feet (about 2 arm lengths) apart from other people.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mt-5 pt-5">
+                        <img src='assets/img/hand-washing.png' class="mx-lg-3 mb-3 mr-lg-n3 mx-auto logo-position d-flex" height="50px" width="50px" />
+                        <h3 class="mb-3 d-flex justify-content-lg-start justify-content-center">WASHING OF HANDS REGULARLY</h3>
+                        <p class="faq-description">Wash your hands with soap and water for at least 20 seconds, especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.
+                        </p>
+                        <!-- <p class="faq-description">Avoid touching your eyes, nose, and mouth with unwashed hands.
+                        </p> -->
+                        <!-- <p class="faq-description">It’s especially important to wash your hands:
+                        </p>
+                        <ol>
+                            <li class="faq-description"> Before eating or preparing food </li>
+                            <li class="faq-description"> Before eating or preparing food </li>
+                            <li class="faq-description"> Before eating or preparing food </li>
+                            <li class="faq-description"> Before eating or preparing food </li>
+                            <li class="faq-description"> Before eating or preparing food </li>
+                            <li class="faq-description"> Before eating or preparing food </li>
+                                
+                            
+                        </ol> -->
+                    </div>
+                    <div class="col-lg-4 col-12 mt-5 pt-5">
+                        <img src='assets/img/no-touching.png' class="mx-lg-3 mb-3 mr-lg-n3 mx-auto logo-position d-flex" height="50px" width="50px" />
+                        <h3 class="mb-3 d-flex justify-content-lg-start justify-content-center">AVOID TOUCHING OF YOUR FACE</h3>
+                        <p class="faq-description">Avoid touching your eyes, nose, and mouth with unwashed hands.
+                        </p>
+                      
+                     
+                    </div>
+                    <div class="col-lg-4 col-12 mt-5 pt-5">
+                        <img src='assets/img/sanitizer.png' class="mx-lg-3 mb-3 mr-lg-n3 mx-auto logo-position d-flex" height="50px" width="50px" />
+                        <h3 class="mb-3 d-flex justify-content-lg-start justify-content-center">USE ALCOHOL-BASED SANITIZER</h3>
+                        <p class="faq-description">If you don’t get to wash your hands during the events, ensure you use alcohol-based sanitizer.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-12 mt-5 pt-5">
+                        <img src='assets/img/monitor-health.png' class="mx-lg-3 mb-3 mr-lg-n3 mx-auto logo-position d-flex" height="50px" width="50px" />
+                        <h3 class="mb-3 d-flex justify-content-lg-start justify-content-center">MONITOR YOUR HEALTH</h3>
+                        <p class="faq-description">If you have a fever, cough, shortness of breath, or other symptoms of COVID-19 during the events, please ensure you isolate yourself.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- VIDEO PLAYER -->
+    <section id="player" class="player-wrapper">
+            <div class="player">
+                <button data-toggle="modal" data-target="#playerModal">
+                    <?xml version="1.0"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
+                    <path xmlns="http://www.w3.org/2000/svg" d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288  c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144  c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z" fill="#ffffff" data-original="#000000" style=""/>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    </g></svg>
+                    
+
+                </button>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="playerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!-- <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div> -->
+            <div class="modal-body">
+                <iframe id="coronationPlayer" width="100%" height="400" src="https://www.youtube.com/embed/38vHAM521rk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+    <!-- END VIDEO PLAYER -->
+
+<section id="faq" class="w-100 mt-5 pt-5 position-relative">
+
+        <div class="container text-black mx-auto">
+            
+            <div>
+                <h1 class="text-black d-flex justify-content-center  text-black text-uppercase text-brand">
+                    FREQUENTY ASKED QUESTIONS        
+                </h1>
+                <h1 style="font-weight: 100;" class="text-black d-flex justify-content-center  text-black text-uppercase text-brand">  (FAQS)</h1>
+                <div class="row">
+                    <div class="col-lg-4 col-12 mt-5 pt-5">
+                        <!-- <img src='assets/img/apps.png' class="mx-lg-3 mb-3 mr-lg-n3 mx-auto logo-position d-flex" height="70px" width="70px" /> -->
+                       <div class="d-flex flex-row mb-5">
+                           <div class='faq-number-bg d-flex justify-content-center align-items-center mr-3'>
+                            <div class='faq-number'>1</div>
+                           </div>
+                        
+                        <div class="mb-3 faq-head my-auto">Are there plans for security?</div>
+                       </div>
+                        <p class="faq-description"> Yes, security is guaranteed, as personnel will be available to ensure the event is safe from start to finish. All guests are advised to wear their event-branded wristbands which will be exchanged with their access cards. You’re advised to travel light to avoid property loss.  </p>
+                    </div>
+
+
+                    <div class="col-lg-4 col-12 mt-5 pt-5">
+                        <!-- <img src='assets/img/design.png' class="mx-lg-3 mb-3 mr-lg-n3 mx-auto logo-position d-flex" height="70px" width="70px" /> -->
+                        <div class="d-flex flex-row mb-5">
+                            <div class='faq-number-bg d-flex justify-content-center align-items-center mr-3'>
+                             <div class='faq-number'>2</div>
+                            </div>
+                         
+                         <div class="mb-3 faq-head my-auto">Are there means of transportation?</div>
+                        </div>
+                        <p class="faq-description">Yes, there are buses and boats available to and fro various destinations. Details on pickup will be communicated. </p>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mt-5 pt-5">
+                        <!-- <img src='assets/img/identity.png' class="mx-lg-3 mb-3 mr-lg-n3 mx-auto logo-position d-flex" height="70px" width="70px" /> -->
+                        <div class="d-flex flex-row mb-5">
+                            <div class='faq-number-bg d-flex justify-content-center align-items-center mr-3'>
+                             <div class='faq-number'>3</div>
+                            </div>
+                         
+                         <div class="mb-3 faq-head my-auto">What if I have allergies?</div>
+                        </div>
+                        <p class="faq-description"> Please let us know as soon as possible if you have any special requirement in respect of allergies.  </p>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mt-5 pt-5">
+                        <!-- <img src='assets/img/social.png' class="mx-lg-3 mb-3 mr-lg-n3 mx-auto logo-position d-flex" height="70px" width="70px" /> -->
+                        <div class="d-flex flex-row mb-5">
+                            <div class='faq-number-bg d-flex justify-content-center align-items-center mr-3'>
+                             <div class='faq-number'>4</div>
+                            </div>
+                         
+                         <div class="mb-3 faq-head my-auto">Is there provision for food?</div>
+                        </div>
+                        <p class="faq-description">  Yes, breakfast will be served between 06:30 a.m. and 10 a.m. daily. All meals are freshly and promptly prepared. Please note that there will be no eating during the event, as one of the royal rules. </p>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mt-5 pt-5">
+                        <!-- <img src='assets/img/marketing.png' class="mx-lg-3 mb-3 mr-lg-n3 mx-auto logo-position d-flex" height="70px" width="70px" /> -->
+                        <div class="d-flex flex-row mb-5">
+                            <div class='faq-number-bg d-flex justify-content-center align-items-center mr-3'>
+                             <div class='faq-number'>5</div>
+                            </div>
+                         
+                         <div class="mb-3 faq-head my-auto">Will there be safety jackets?</div>
+                        </div>
+                        <p class="faq-description">Each jetty has safety jackets, however, due to the risk of the pandemic, we advise guests to come with their personal jackets.  </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="container py-3">
+            <p class="text-center" style="font-size: 1.5rem;">Follow Olu of warri kingdom on this social media</p>
+            <div class="row mb-5">
+                 <div class="col-12 text-center">
+                     <div class="social-wrapper mx-auto">
+                        <div class="social">
+                            <a href="https://web.facebook.com/oluofwarrikingdom/" target="_blank" rel="noreferrer noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                  </svg>
+                            </a>
+                          </div>
+                          <div class="social">
+                            <a href="https://www.instagram.com/oluofwarri/" target="_blank" rel="noreferrer noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                  </svg>
+                            </a>
+                          </div>
+                          <div class="social">
+                                <a href="https://www.youtube.com/channel/UC-O_TBTjLJrAuJ1oLmE8yqQ" target="_blank" rel="noreferrer noopener"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                                      </svg>
+                                </a>
+                          </div>
+                     </div>         
+                 </div>
+            </div>
+            <!-- <hr style="color: white;" /> -->
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-12 col-sm-12 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one light-gray-text2">
+                    <div class="hcode-footer-copyright vertical-align-middle display-inline-block"> <div class="textwidget">© 2021 HRM Tsola Emiko. <br>Developed by <a href="https://www.delyorkinternational.com/" target="_blank" class="light-gray-text2" rel="noopener">Del-York International.</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
+   <script src="app.js" type="text/javascript"> </script>
+</body>
+</html>
