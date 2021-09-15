@@ -151,7 +151,7 @@ p {
 
 .navbar-nav > li >  a {
     /* font-size: 1.5rem; */
-    font-weight: 600;
+    /* font-weight: 600; */
     letter-spacing: 1px;
     text-transform: uppercase !important;
     border-bottom: 2px solid transparent;
