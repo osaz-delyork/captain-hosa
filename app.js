@@ -144,4 +144,14 @@ $(document).ready(function(){
     $("#playerModal").on('hide.bs.modal', function(){
         $("#coronationPlayer").attr('src', '');
     });
+
+    // $(".modal-backdrop").on('click', function() {
+    //     console.log('i am clicked!!!!')
+    //     $("#coronationPlayer").attr('src', '');
+    //     $(this).hide();
+    // })
+
+    // document.querySelector('.modal-backdrop').addEventListener('click', function() {
+    //     alert('Clicked!!!')
+    // })
 });

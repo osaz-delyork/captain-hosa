@@ -182,7 +182,7 @@ p {
 /* Main Style */
 .countdown-wrapper {
     background-color: var(--royal-blue);
-    padding: var(--spacing-200)  0;
+    padding: var(--spacing-100)  0;
     padding-bottom: 0;
     position: sticky;
     top: 0;
@@ -195,7 +195,7 @@ p {
     /* height: 100vh; */
     /* padding: 3rem 0; */
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .countdown-wrapper .overlay {
@@ -214,8 +214,8 @@ p {
     justify-content: flex-end;
     align-items: center;
     position: absolute;
-    bottom: 0;
-    z-index: 1;
+    /* bottom: 0;
+    z-index: 1; */
     /* padding-bottom: ; */
 }
 
@@ -326,7 +326,7 @@ p {
 
 
 .flip-clock-wrapper ul li a div.down div.inn {
-    background-color: var(--bamboo) !important;
+    background-color: var(--gold) !important;
 }
 
 .flip-clock-divider .flip-clock-label {
@@ -434,6 +434,14 @@ p {
     .accomodation .faq-description {
         text-align: justify !important;
     }
+}
+
+
+
+
+
+#okunbos {
+    background-color: var(--white-50);
 }
 
 
