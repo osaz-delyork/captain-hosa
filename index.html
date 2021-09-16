@@ -16,6 +16,8 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+   
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light  fixed-top olu-navbar">
         <div class='container'>
@@ -31,7 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item ">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -54,18 +56,20 @@
       </nav>
     <!-- End Navigation -->
 
+    <main class="bg-white">
+
     <!-- Landing Page -->
     <section id="home" class="countdown-wrapper">
         <div class="container-fluid mt-3 pt-5">
             <div class="row">
-                <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+                <div class="col-md-6 col-sm-12 d-flex order-2 order-md-1 justify-content-center">
                     <!-- avatar-wrapper -->
                         <div class="">
                                 <img  class="img-fluid" src="/assets/img/hosa/capt-hosa.png" alt="captain wells idahosa" />
                         </div>
                 </div>
 
-                <div class="col-md-6 col-sm-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+                <div class="col-md-6 col-sm-12 d-flex order-1 order-md-2 align-items-center justify-content-center justify-content-lg-start">
                         <div class="landing-wrapper mt-5 mt-md-0 text-center text-md-left">
                             <div class="landing__title">
                                  <p id="memory">IN LOVING MEMORY</p>
@@ -92,7 +96,7 @@
 
 
     <!-- About Section -->
-    <section id="about" class="about py-5">
+    <section id="about" class="about py-5 mt-1">
         <div class="container my-0 my-md-5 about__wrapper">
              <div class="row">
                  <div class="col-sm-12 col-lg-6">
@@ -319,9 +323,9 @@
 
     </section>
 
-
-     <div class="  padding-y-50">
-        <section class="position-relative w-100 mt-5 pt-5">
+ <!-- padding-y-50 -->
+     <div id="accomodation" class=" ">
+        <section class="position-relative w-100  pt-5 bg-white">
     
         <div class="accomodation container text-black mx-auto">
                 <h1 class="text-black d-flex justify-content-center title-border mb-5">ACCOMMODATION</h1>
@@ -408,7 +412,7 @@
           <div class="text-center mx-auto mt-3" style="max-width: 400px;">
                <h3 style="color: var(--wine); margin-top: 1.5rem">The Concierge Hotlines</h3>
                <p class="faq-description" style="text-align: center !important;">Please contact us for any assistance!</p>
-               <table class="table table-bordered table-hover">
+               <table class="mb-0 table table-bordered table-hover">
                 <thead>
                   <tr>
                     <th  style="font-size: 1.5rem;" scope="col">Name</th>
@@ -438,7 +442,7 @@
     </div>
 
 
-    <section id="travel" class="travel">
+    <section id="travel" class="travel bg-white">
         <!-- <div class="my-5 travel-banner">
             <img src="/assets/img/hit-the-road.png" />
         </div> -->
@@ -449,7 +453,7 @@
             <p class="faq-description">Buses will be available to transport attendees from hotels to the jetty, while boats will convey them to Ode Itsekiri where the coronation will take place. Transportation back to the hotel will be seamless.</p>
         </div>
 
-        <div class="container my-5">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 mb-2">
                     <div class="img-container mb-3" style="width: 100%;">
@@ -704,7 +708,7 @@
     <!-- End Modal -->
     <!-- END VIDEO PLAYER -->
 
-<section id="faq" class="w-100 mt-5 pt-5 position-relative">
+<section id="faq" class="bg-white w-100  position-relative">
 
         <div class="container text-black mx-auto">
             
@@ -779,7 +783,9 @@
             </div>
         </div>
     </section>
-      <!-- Footer -->
+
+
+<!-- Footer -->
     <footer class="footer">
         <div class="container py-3">
             <p class="text-center" style="font-size: 1.5rem;">Follow Olu of warri kingdom on this social media</p>
@@ -813,13 +819,16 @@
             <!-- <hr style="color: white;" /> -->
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-md-12 col-sm-12 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one light-gray-text2">
-                    <div class="hcode-footer-copyright vertical-align-middle display-inline-block"> <div class="textwidget">© 2021 HRM Tsola Emiko. <br>Developed by <a href="https://www.delyorkinternational.com/" target="_blank" class="light-gray-text2" rel="noopener">Del-York International.</a></div>
+                    <div class="hcode-footer-copyright vertical-align-middle display-inline-block"> <div class="textwidget">© 2021 HRM Tsola Emiko. <br>Developed by <a href="https://www.delyorkinternational.com/" target="_blank" class="light-gray-text2" style="color: var(--royal-red)" rel="noopener">Del-York International.</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+</main>    
 
+
+  
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js" ></script>

@@ -74,7 +74,7 @@ html, body {
     padding: 0;
     scroll-behavior: smooth;
     scroll-snap-align: start;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 p {
@@ -184,6 +184,9 @@ p {
     background-color: var(--royal-blue);
     padding: var(--spacing-200)  0;
     padding-bottom: 0;
+    position: sticky;
+    top: 0;
+    z-index: -1;
     /* padding-bottom: calc(var(--spacing-300) - 1rem ); */
     /* display: flex; */
     /* flex-direction: column; */
@@ -436,7 +439,7 @@ p {
 
 /* about Section */
 .about {
-    /* background-color: var(--royal-blue); */
+    background-color: var(--white);
     position: relative;
     /* padding: 10rem; */
 
@@ -530,9 +533,21 @@ p {
 }
 
 
+#accomodation {
+    background-color: var(--white);
+}
+
+
+#faq {
+    padding: var(--spacing-200) 0 ;
+}
 
 
 
+main {
+    position: relative;
+    z-index: 5;
+}
 
 
 .about .divider {
@@ -608,7 +623,7 @@ p {
 
 /* Footer */
 .footer {
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
     background-color: var(--black);
     width: 100%;
     height: 300px;
@@ -941,6 +956,8 @@ h1.text-black {
     padding-top: 20px;
     padding-bottom: 150px;
 }
+
+
 
 .table  th p {
     font-weight: 600 !important;
