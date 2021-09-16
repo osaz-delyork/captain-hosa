@@ -164,6 +164,18 @@ p {
     transition-duration: .5s !important;
 }
 
+.nav-link.active {
+    color: var(--cool-blue) !important;
+    position: relative;
+}
+.nav-link.active::after {
+    width: 100%;
+    background-color: var(--cool-blue);
+    content: '';
+    position: absolute;
+    transform: scaleX(1);
+}
+
 /* END Navbar */
 
 
@@ -505,11 +517,19 @@ p {
 }
 
 
+#travel {
+    background-color: var(--white-50);
+}
+
+
 
 #protocols {
     padding-top: var(--spacing-200);
     padding-bottom: var(--spacing-200);
 }
+
+
+
 
 
 
