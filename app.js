@@ -24,7 +24,7 @@ var clock = $('.clock').FlipClock({
 });
 
 // input your custom Date below
-var eventDate = new Date('2021-08-21 00:00:00');
+var eventDate = new Date('2021-10-05 00:00:00');
 
 
 var dif = (eventDate.getTime() / 1000) - ((new Date().getTime())/1000);
