@@ -26,7 +26,7 @@
   --off-white: #F9F0EC;
   --black: #000;
 
-  --fs-xl: clamp(3.5rem, 12vw + 1rem, 7rem);
+  --fs-xl: clamp(3.5rem, 12vw + 1rem, 5rem);
   --fs-700: 2.5rem;
   --fs-600: 2rem;
   --fs-500: 1.8rem;
@@ -68,7 +68,7 @@ html, body {
     box-sizing: border-box;
     color: var(--blue-black) !important;
     font-family: 'Helvetica Neue', sans-serif;
-    background-color: var(--white-50);
+    background-color: var(--white-50) !important;
     font-size: 62.5%;
     margin: 0;
     padding: 0;
@@ -182,8 +182,9 @@ p {
 /* Main Style */
 .countdown-wrapper {
     background-color: var(--royal-blue);
-    padding: var(--spacing-500)  0;
-    padding-bottom: calc(var(--spacing-300) - 1rem );
+    padding: var(--spacing-200)  0;
+    padding-bottom: 0;
+    /* padding-bottom: calc(var(--spacing-300) - 1rem ); */
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
