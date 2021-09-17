@@ -532,6 +532,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     /* transform: scaleX(-1); */
+    overflow: hidden;
 }
 
 
@@ -543,6 +544,12 @@ p {
     opacity: .8;
     /* bottom: 0; */
     /* right: 20px; */
+}
+
+@media(max-width: 500px)  {
+    .lifeCelebration {
+        /* background-size: auto; */
+    }
 }
 
 #interment {
