@@ -460,7 +460,7 @@ p {
     font-family: 'Open Sans';
 }
 
-.about p, .about blockquote {
+.about p, .about blockquote, #travel p {
     color: var(--blue-black-30) !important;
 }
 
@@ -525,7 +525,7 @@ p {
 
 /* Itinerary Section */
 
-#Itinerary {
+#interment {
     background-color: var(--white-50);
     padding-top: var(--spacing-200);
     padding-bottom: var(--spacing-200);
@@ -900,15 +900,15 @@ h1.text-black {
   }
 
   .text-brand {
-    color: #A88445;
-
-
+      color: var(--royal-blue);
+    /* color: #A88445; */
   }
 
   .faq-number-bg {
       height: 20px;
       width: 20px;
-      background: #A88445;
+      background-color: var(--royal-blue);
+      /* background:  #A88445; */
       border-radius: 50%;
   }
   .faq-number {
