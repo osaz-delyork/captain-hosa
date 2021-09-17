@@ -95,7 +95,7 @@ function handleTickInit(tick) {
 
 // Navbar
 function toggleNavbarBg() {
-    if(window.scrollY > window.innerHeight) {
+    if(window.scrollY > 30) {
         document.querySelector('.olu-navbar').classList.add('nav-scroll')
     }else{
         document.querySelector('.olu-navbar').classList.remove('nav-scroll')

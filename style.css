@@ -108,7 +108,7 @@ p {
 }
 
 .olu-navbar {
-    background-color: transparent !important;
+    background-color: var(--royal-blue) !important;
     color: var(--white) !important; 
     font-family: 'Open Sans', sans-serif !important;
     font-size: 1.3rem !important;
