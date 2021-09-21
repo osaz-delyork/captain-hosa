@@ -448,6 +448,34 @@ p {
 }
 
 
+ hr {
+    position: relative;
+}
+
+ hr::before,  hr::after {
+    content: '';
+    position: absolute;
+
+    display: block;
+    background-image: url('/assets/img/hosa/wing-stamp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+ hr::before {
+    left: 0;
+    top:  -6px;
+}
+
+ hr::after {
+    right: 0;
+    top: -15px;
+    transform: rotate(180deg);
+}
+
+
 /* about Section */
 .about {
     background-color: var(--white);
