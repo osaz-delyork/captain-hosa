@@ -108,51 +108,51 @@ document.addEventListener('DOMContentLoaded',toggleNavbarBg)
 // Embedded Video Player
 
 
-function autoPlay(params) {
-    let player = document.querySelector('#coronationPlayer')
-    let modal = document.querySelector('#playerModal')
-    let modalShow = document.querySelector('shown.bs.modal')
-    let modalHide = document.querySelector('hide.bs.modal')
-    let videoSrc = player.getAttribute('src')
-    player.removeAttribute('src')
+// function autoPlay(params) {
+//     let player = document.querySelector('#coronationPlayer')
+//     let modal = document.querySelector('#playerModal')
+//     let modalShow = document.querySelector('shown.bs.modal')
+//     let modalHide = document.querySelector('hide.bs.modal')
+//     let videoSrc = player.getAttribute('src')
+//     player.removeAttribute('src')
 
-    console.log(Array.from(modal.classList))
-    if(Array.from(modal.classList).includes('show')){
-        console.log('ture')
-    } else if(Array.from(modal.classList).includes('hide')) {
-        console.log('false')
-    }
-}
+//     console.log(Array.from(modal.classList))
+//     if(Array.from(modal.classList).includes('show')){
+//         console.log('ture')
+//     } else if(Array.from(modal.classList).includes('hide')) {
+//         console.log('false')
+//     }
+// }
 
 // autoPlay()
-$(document).ready(function(){
-    /* Get iframe src attribute value i.e. YouTube video url
-    and store it in a variable */
-    var url = $("#coronationPlayer").attr('src');
+// $(document).ready(function(){
+//     /* Get iframe src attribute value i.e. YouTube video url
+//     and store it in a variable */
+//     var url = $("#coronationPlayer").attr('src');
     
-    /* Remove iframe src attribute on page load to
-    prevent autoplay in background */
-    $("#coronationPlayer").attr('src', '');
+//     /* Remove iframe src attribute on page load to
+//     prevent autoplay in background */
+//     $("#coronationPlayer").attr('src', '');
     
-    /* Assign the initially stored url back to the iframe src
-    attribute when modal is displayed */
-    $("#playerModal").on('shown.bs.modal', function(){
-        $("#coronationPlayer").attr('src', url);
-    });
+//     /* Assign the initially stored url back to the iframe src
+//     attribute when modal is displayed */
+//     $("#playerModal").on('shown.bs.modal', function(){
+//         $("#coronationPlayer").attr('src', url);
+//     });
     
-    /* Assign empty url value to the iframe src attribute when
-    modal hide, which stop the video playing */
-    $("#playerModal").on('hide.bs.modal', function(){
-        $("#coronationPlayer").attr('src', '');
-    });
+//     /* Assign empty url value to the iframe src attribute when
+//     modal hide, which stop the video playing */
+//     $("#playerModal").on('hide.bs.modal', function(){
+//         $("#coronationPlayer").attr('src', '');
+//     });
 
-    // $(".modal-backdrop").on('click', function() {
-    //     console.log('i am clicked!!!!')
-    //     $("#coronationPlayer").attr('src', '');
-    //     $(this).hide();
-    // })
+//     // $(".modal-backdrop").on('click', function() {
+//     //     console.log('i am clicked!!!!')
+//     //     $("#coronationPlayer").attr('src', '');
+//     //     $(this).hide();
+//     // })
 
-    // document.querySelector('.modal-backdrop').addEventListener('click', function() {
-    //     alert('Clicked!!!')
-    // })
-});
+//     // document.querySelector('.modal-backdrop').addEventListener('click', function() {
+//     //     alert('Clicked!!!')
+//     // })
+// });
