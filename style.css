@@ -584,12 +584,33 @@ p {
 #interment {
     background-color: var(--white-50);
     padding-top: var(--spacing-200);
-    padding-bottom: var(--spacing-200);
+    /* padding-bottom: var(--spacing-200); */
 }
 
 
+.rsvp {
+    background-color: var(--royal-blue);
+    color: var(--white);
+    height: 300px;
+}
+
+.rsvp .title {
+    letter-spacing: 3.8px;
+    /* font-weight: 200; */
+    /* font-size: clamp(1.5rem, 3rem, 3.2rem); */
+    font-size: max(1.5rem, min(3rem, 3.2rem));
+}
+
+.rsvp .body {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
 #travel {
     background-color: var(--white-50);
+    padding: var(--spacing-100) 0;
+
 }
 
 
