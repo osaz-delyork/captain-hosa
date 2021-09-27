@@ -41,6 +41,31 @@
 }
 
 
+/* bootstrap override */
+.btn-primary {
+    background-color: var(--royal-blue) !important;
+    border-color: var(--royal-blue) !important;
+}
+.btn-primary:hover {
+    background-color: var(--cool-blue) !important;
+    border-color: var(--cool-blue) !important;
+}
+.btn-secondary {
+    background-color: var(--cool-blue) !important;
+    border-color: var(--cool-blue) !important;
+}
+
+.btn-secondary:hover {
+    background-color: var(--royal-blue) !important;
+    border-color: var(--white) !important;
+}
+
+.form-control:focus {
+    border-color: var(--royal-blue) !important;
+    box-shadow: 0 0 0 0.2rem rgb(26 55 99 / 25%) !important;
+}
+
+
 @media (max-width: 767px) {
     :root {
         --fs-700: 2rem;
@@ -82,6 +107,10 @@ p {
     margin: 0;
 }
 
+main {
+    position: relative;
+    /* z-index: 5; */
+}
 
 /* NavBar */
 
@@ -187,7 +216,7 @@ p {
     padding-bottom: 0;
     position: sticky;
     top: 0;
-    z-index: -1;
+    /* z-index: -1; */
     /* padding-bottom: calc(var(--spacing-300) - 1rem ); */
     /* display: flex; */
     /* flex-direction: column; */
@@ -562,6 +591,7 @@ p {
     background-repeat: no-repeat;
     /* transform: scaleX(-1); */
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -588,11 +618,18 @@ p {
 }
 
 
+.tributeInfo {
+    background-color: var(--royal-blue);
+    color: var(--white);
+    padding: var(--spacing-100) 0 !important;
+}
+
 .rsvp {
     background-color: var(--royal-blue);
     color: var(--white);
     height: 300px;
 }
+
 
 .rsvp .title {
     letter-spacing: 3.8px;
@@ -610,6 +647,7 @@ p {
 #travel {
     background-color: var(--white-50);
     padding: var(--spacing-100) 0;
+    position: relative;
 
 }
 
@@ -628,13 +666,6 @@ p {
 
 #faq {
     padding: var(--spacing-200) 0 ;
-}
-
-
-
-main {
-    position: relative;
-    z-index: 5;
 }
 
 
@@ -794,6 +825,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .social-wrapper {
