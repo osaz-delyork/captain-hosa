@@ -36,7 +36,13 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#biography">Biography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#philanthropy">Philanthropy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tribute">Tribute</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#interment">FUNERAL & INTERMENT</a>
@@ -60,6 +66,10 @@
 
     <!-- Landing Page -->
     <section id="home" class="countdown-wrapper">
+         <img src="/assets/img/hosa/landing/top-left.png" class="position-absolute img-fluid"  width="150"/>
+         <img src="/assets/img/hosa/landing/top-right.png" class="position-absolute img-fluid landing-top-right"  width="150"/>
+         <img src="/assets/img/hosa/landing/bottom-left.png" class="position-absolute img-fluid landing-bottom-left"  width="150"/>
+         <img src="/assets/img/hosa/landing/bottom-right.png" class="position-absolute img-fluid landing-bottom-right"  width="150"/>
         <div class="container-fluid mt-3 pt-5">
             <div class="row">
                 <div class="col-md-6 col-sm-12 d-flex order-2 order-md-1 justify-content-center">
@@ -92,26 +102,28 @@
                        
 
                         <div class="text-center  d-flex flex-column align-items-center align-items-md-end">
-                            <p class="countdown__label my-0 my-md-3" >COUNTDOWN TO CAPPY’S LAST FLIGHT</p>
-                            <!-- <div class="clock" id="clock1"></div> -->
-                            <div class="tick mb-5 mx-4" data-did-init="handleTickInit">
-          
-                               <div data-repeat="true" data-layout="horizontal fit" data-transform="preset(d, h, m, s) -> delay">
-                           
-                                   <div class="tick-group">
-                           
-                                       <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
-                           
-                                           <span data-view="flip"></span>
-                           
-                                       </div>
-                           
-                                       <span data-key="label" data-view="text" class="tick-label"></span>
-                           
-                                   </div>
-                           
-                               </div>
-                           </div>
+                            <div class="d-flex flex-column">
+                                    <p class="countdown__label my-0 my-md-3 ml-3" >COUNTDOWN TO CAPPY’S LAST FLIGHT</p>
+                                    <!-- <div class="clock" id="clock1"></div> -->
+                                    <div class="tick mb-5 " data-did-init="handleTickInit">
+                
+                                    <div data-repeat="true" data-layout="horizontal fit" data-transform="preset(d, h, m, s) -> delay">
+                                
+                                        <div class="tick-group">
+                                
+                                            <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+                                
+                                                <span data-view="flip"></span>
+                                
+                                            </div>
+                                
+                                            <span data-key="label" data-view="text" class="tick-label"></span>
+                                
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                 
@@ -154,38 +166,6 @@
         
     </section> -->
 
-
-        <!-- First Banner  -->
-        <section class="bg-white lifeCelebration" style="overflow: hidden;">   
-            <div class="row">
-             
-                <div class="col-sm-12 col-md-4">
-                    <!-- <img src="/assets//img/hosa/it-is-well-with-wells.jpeg" class="img-fluid" alt="it is well with wells" /> -->
-                 </div>
-
-                 <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-end align-items-end">
-                    <!-- <img src="/assets//img/hosa/it-is-well-with-wells.jpeg" class="img-fluid" alt="it is well with wells" /> --> 
-                    <div class="foot-note mt-5">
-                        <p class="pl-2 pl-md-4 pr-2 pr-md-0 text-white faq-description text text-justify" >In what can only be described as a self-fulfilling prophecy, the incredible and exceptional story of Captain Idahosa Wells Okunbo gives us a reason to wholeheartedly celebrate his life, rather than mark the inevitability with a downcast spirit.</p>
-                        <p class="pl-2 pl-md-4 pr-2 pr-md-0 text-white faq-description text text-justify" >His life, an enigmatic and remarkable story, inspired – and still inspires – countless others to confront difficult odds and march undaunted towards greatness. His success blueprints hope, resilience, and discipline as its watchwords and bears testimony to the fruits of a life of labour, sacrifice, faith, and service to humanity.</p>
-                    </div>
-                    <div class="w-100 d-flex justify-content-center">
-                        <img src="/assets/img/hosa/rsz_it_is_well_with_wells_write_up.png" class="d-inline-block img-fluid" alt="it is well" style="max-height: 338px;" />
-                    </div>
-                 </div>
-         
-                 <div class="col-sm-12 col-md-4 pt-5 d-flex flex-column align-items-center justify-content-center position-relative">
-                    <!-- <h1 class="text-white">CELEBRATION OF LIFE </h1> -->
-
-                    <img src="/assets/img/hosa/rsz_man_alone.png" alt="man alone" style="transform: scaleX(-1);" class="img-fluid" />
-                    
-                  
-
-                    <!-- <p class="pl-2 pl-md-4 pr-2 pr-md-0 text-white faq-description text text-justify" >His life, an enigmatic and remarkable story inspired – and still inspires – countless others to confront difficult odds and march undaunted towards greatness.  His success blueprint documents hope, resilience and discipline as its watchwords, and bears testimony to the fruits of a life of labour, sacrifice, faith and service to humanity.</p> -->
-             </div>
-             
-            </div>
-        </section>
         <!-- <section class="bg-white" style="background-color: var(--royal-blue) !important; overflow: hidden;">   
             <div class="row">
                  <div class="col-sm-12 col-md-4 py-5 d-flex flex-column align-items-center justify-content-center">
@@ -204,13 +184,26 @@
 
 
     <!-- About Section -->
-    <section id="about" class="about py-5">
+    <section id="biography" class="about py-5">
         <div class="container my-0 my-md-5 about__wrapper">
              <div class="row">
-                <div class="col-sm-12 col-lg-6 d-flex flex-column justify-content-center">
+                 <div class="col-sm-12 col-lg-6 d-flex align-items-center">
+                        <div class="pr-0 pr-md-5">
+                            <h1 class="text-uppercase about__title">BIOGRAPHY</h1>
+                            <p class="faq-description text text-justify">History is filled with great men, but only a few of them will be remembered for generations because they made indelible marks that ascended great heights of achievement. One of such men is the pre-eminent nobleman, Captain Idahosa Wells Okunbo, who is vindicated by his productive life and inspiring legacy.</p>
+                                            <p class="faq-description text text-justify">
+                                                A discerning onlooker is bound to note the lifetime of a daring adventurer, an explorer who experienced and undertook his life’s journey courageously. Captain Hosa ventured through many career paths and excelled in all of them. Taking off as a commercial pilot in his early twenties, he had risen by sheer determination to be a Captain by his mid-twenties. At the young age of 30, he started on his path to becoming a globally recognized business magnate, investor, philanthropist, and socio-economic reformer. His incredible successes across multiple competitive sectors are indelible marks and remarkable legacy symbols to future generations. 
+                                            </p>
+                                            <p class="faq-description text text-justify">He was caring and exceptionally benevolent. Cappy took his love and belief in humanity to the ultimate expression of sacrifice and hope. His extraordinary life is a blueprint of resilience, discipline, and tenacity as it bears testimony to the fruits of labour, faith, and service to humanity.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 d-flex flex-column justify-content-center">
                         <div class="pl-0 pl-md-5 my-5 my-sm-0">   
                             <div class="">
-                                <img  class="img-fluid" src="/assets/img/hosa/blue-hosa.png" alt="captain wells idahosa" />
+                                <!-- <img  class="img-fluid" src="/assets/img/hosa/blue-hosa.png" style="transform:scaleX(-1);" alt="captain wells idahosa" /> -->
+                                <div class="d-flex justify-content-center align-items-center" style="border: 2px solid var(--royal-blue); width: 100%; height: 400px;">
+                                        <p>Video placeholder</p>
+                                </div>
                             </div>
                                 <!-- <blockquote class="faq-description text text-justify">
                                     As you plan to grace the coronation ceremonies with your esteemed presence, please acquaint yourself with some of the important and helpful information that will help make your attendance a seamless and enjoyable one.
@@ -218,10 +211,39 @@
                                     <cite>Captain Idahosa Okunbo</cite>
                                 </blockquote> -->
                         </div>
-                </div>
-                 <div class="col-sm-12 col-lg-6 d-flex align-items-center">
+                    </div>
+             </div>
+        </div>
+        
+    </section>
+
+    <section class="position-relative bg-white">
+        <img src="/assets/img/hosa/family-one.jpg" class="img-fluid" /> 
+    </section>
+
+    <!-- philanthropy Section -->
+    <section id="philanthropy" class="about py-5">
+      
+        <div class="container my-0 my-md-5 about__wrapper">
+             <div class="row">
+                    <div class="col-sm-12 col-lg-6 d-flex flex-column justify-content-center">
+                        <div class="pl-0 pl-md-5 my-5 my-sm-0">   
+                            <div class="">
+                                <img  class="img-fluid" src="/assets/img/hosa/blue-hosa.png"  alt="captain wells idahosa" />
+                                <!-- <div class="d-flex justify-content-center align-items-center" style="border: 2px solid var(--royal-blue); width: 100%; height: 400px;">
+                                        <p>Video placeholder</p>
+                                </div> -->
+                            </div>
+                                <!-- <blockquote class="faq-description text text-justify">
+                                    As you plan to grace the coronation ceremonies with your esteemed presence, please acquaint yourself with some of the important and helpful information that will help make your attendance a seamless and enjoyable one.
+                                    <br>
+                                    <cite>Captain Idahosa Okunbo</cite>
+                                </blockquote> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 d-flex align-items-center">
                         <div class="pr-0 pr-md-5">
-                            <h1 class="text-uppercase about__title">ABOUT</h1>
+                            <h1 class="text-uppercase about__title">PHILANTHROPY</h1>
                             <p class="faq-description text text-justify">History is filled with great men, but only a few of them will be remembered for generations because they made indelible marks that ascended great heights of achievement. One of such men is the pre-eminent nobleman, Captain Idahosa Wells Okunbo, who is vindicated by his productive life and inspiring legacy.</p>
                                             <p class="faq-description text text-justify">
                                                 A discerning onlooker is bound to note the lifetime of a daring adventurer, an explorer who experienced and undertook his life’s journey courageously. Captain Hosa ventured through many career paths and excelled in all of them. Taking off as a commercial pilot in his early twenties, he had risen by sheer determination to be a Captain by his mid-twenties. At the young age of 30, he started on his path to becoming a globally recognized business magnate, investor, philanthropist, and socio-economic reformer. His incredible successes across multiple competitive sectors are indelible marks and remarkable legacy symbols to future generations. 
@@ -235,25 +257,140 @@
     </section>
 
 
-    <section class="tributeInfo position-relative">
-        <div  class="container h-100">
+            <!-- First Banner 
+            <section class="bg-white lifeCelebration" style="overflow: hidden;">   
+                <div class="row">
+                 
+                    <div class="col-sm-12 col-md-4">
+                         <img src="/assets//img/hosa/it-is-well-with-wells.jpeg" class="img-fluid" alt="it is well with wells" /> 
+                     </div>
+    
+                     <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-end align-items-end">
+                         <img src="/assets//img/hosa/it-is-well-with-wells.jpeg" class="img-fluid" alt="it is well with wells" /> 
+                        <div class="foot-note mt-5">
+                            <p class="pl-2 pl-md-4 pr-2 pr-md-0 text-white faq-description text text-justify" >In what can only be described as a self-fulfilling prophecy, the incredible and exceptional story of Captain Idahosa Wells Okunbo gives us a reason to wholeheartedly celebrate his life, rather than mark the inevitability with a downcast spirit.</p>
+                            <p class="pl-2 pl-md-4 pr-2 pr-md-0 text-white faq-description text text-justify" >His life, an enigmatic and remarkable story, inspired – and still inspires – countless others to confront difficult odds and march undaunted towards greatness. His success blueprints hope, resilience, and discipline as its watchwords and bears testimony to the fruits of a life of labour, sacrifice, faith, and service to humanity.</p>
+                        </div>
+                        <div class="w-100 d-flex justify-content-center">
+                            <img src="/assets/img/hosa/rsz_it_is_well_with_wells_write_up.png" class="d-inline-block img-fluid" alt="it is well" style="max-height: 338px;" />
+                        </div>
+                     </div>
+             
+                     <div class="col-sm-12 col-md-4 pt-5 d-flex flex-column align-items-center justify-content-center position-relative">
+                         <h1 class="text-white">CELEBRATION OF LIFE </h1> --
+    
+                        <img src="/assets/img/hosa/rsz_man_alone.png" alt="man alone" style="transform: scaleX(-1);" class="img-fluid" />
+                        
+                      
+    
+                        <-- <p class="pl-2 pl-md-4 pr-2 pr-md-0 text-white faq-description text text-justify" >His life, an enigmatic and remarkable story inspired – and still inspires – countless others to confront difficult odds and march undaunted towards greatness.  His success blueprint documents hope, resilience and discipline as its watchwords, and bears testimony to the fruits of a life of labour, sacrifice, faith and service to humanity.</p> --
+                 </div>
+                 
+                </div>
+            </section> -->
+
+
+        <!-- Tribute Section -->
+        <!-- <section id="tribute" class="about py-5">
+            <div class="container my-0 my-md-5 about__wrapper">
+                 <div class="row">
+                     <div class="col-sm-12 col-lg-8 offset-lg-2 d-flex align-items-center">
+                            <div class="pr-0 pr-md-5">
+                                <h1 class="text-uppercase about__title">TRIBUTE</h1>
+                                <p class="faq-description text text-justify">Captain Idahosa Okunbor was a man who truly believed in God. His good works and love for people were evident in his kindness, generosity and popularity as humanity’s rare gem.</p>
+                                <p class="faq-description text text-justify">His impact is felt by thousands of people all over Nigeria, Africa and the rest of the world, in his capacity as a father, brother, acquaintance, friend, mentor, guardian, philanthropist… and the list goes on.</p>
+                                <p class="faq-description text-center mb-0">Who was Captain Idahosa Okunbo to you? </p>
+                                <p class="faq-description text-center mb-0">What impact did he have in your life?</p>
+        
+                                        <button data-toggle="modal" data-target="#tributeModal" class="btn btn-secondary btn-lg mx-auto my-3 d-block w-50 py-3">Pay Tribute</button>
+                                        <p class="text-center faq-description text">Or</p>
+                                        <p class="text-center faq-description text my-3 text-center">Share your story with us. Email us: info@captainhosa.com</p>
+                                              
+                            </div>
+                        </div>
+                 </div>
+            </div>
+            
+        </section> -->
+
+
+    <!-- <section class="tributeInfo position-relative">
+        <div class="container h-100">
              <div class="row h-100">
-                    <div class="col-12  h-100">
-                        <p class="faq-description text">Captain Idahosa Okunbor was a man who truly believed in God. His good works and love for people were evident in his kindness, generosity and popularity as humanity’s rare gem.</p>
-                        <p class="faq-description text">His impact is felt by thousands of people all over Nigeria, Africa and the rest of the world, in his capacity as a father, brother, acquaintance, friend, mentor, guardian, philanthropist… and the list goes on.</p>
-                        <p class="faq-description text text-center">Who was Captain Idahosa Okunbo to you? What impact did he have in your life?</p>
-
-                                <button data-toggle="modal" data-target="#tributeModal" class="btn btn-secondary btn-lg mx-auto my-3 d-block w-25 py-3">Pay Tribute</button>
-                                <p class="text-center faq-description text">Or</p>
-                                <p class="text-center faq-description text my-3 text-center">Share your story with us. Email us: info@captainhosa.com</p>
-
-                                
-
-
+                    <div class="col-lg-8 offset-lg-2  h-100">
+                        <iframe class="ytube" src="https://www.youtube.com/embed/C3Eoy75Yex8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
              </div>
         </div>
+    </section> -->
+
+        <!-- VIDEO PLAYER -->
+        <section id="player" class="player-wrapper">
+            <div class="player">
+                <button data-toggle="modal" data-target="#playerModal">
+                    <?xml version="1.0"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
+                    <path xmlns="http://www.w3.org/2000/svg" d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288  c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144  c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z" fill="#ffffff" data-original="#000000" style=""/>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    <g xmlns="http://www.w3.org/2000/svg">
+                    </g>
+                    </g></svg>
+                    
+
+                </button>
+        </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="playerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!-- <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div> -->
+            <div class="modal-body">
+                <iframe id="coronationPlayer" width="100%" height="400" src="https://www.youtube.com/embed/C3Eoy75Yex8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+    <!-- END VIDEO PLAYER -->
 
     <section class="culture">
         <!-- class="container my-5" -->
@@ -274,8 +411,8 @@
         
 <div class="container">
         <div class="row pb-5 mb-5">
-           <div class="col-lg-4 col-12 align-items-center d-flex flex-column">
-             <div class="itenary-box-container">
+           <div class="col-lg-3 col-12 align-items-center d-flex flex-column">
+             <div class="itenary-box-container w-100">
                 <div class="header d-flex justify-content-between px-4">
                     <div class="itenary-text-head">
                         FUNERAL ARRANGEMENTS
@@ -324,7 +461,7 @@
              </div>
            </div>
 
-           <div class="col-lg-4 col-12 align-items-center  d-flex flex-column">
+           <div class="col-lg-3 col-12 align-items-center  d-flex flex-column">
             <div class="itenary-box-container">
                 <div class="header d-flex justify-content-between px-4">
                     <div class="itenary-text-head">
@@ -353,7 +490,7 @@
              </div>
          </div>
 
-         <div class="col-lg-4 col-12 align-items-center  d-flex flex-column">
+         <div class="col-lg-3 col-12 align-items-center  d-flex flex-column">
             <div class="itenary-box-container">
                 <div class="header d-flex justify-content-between px-4">
                     <div class="itenary-text-head">
@@ -381,7 +518,7 @@
              </div>
          </div>
 
-        <div class="col-lg-4 mx-auto col-12 align-items-center  d-flex flex-column">
+        <div class="col-lg-3 mx-auto col-12 align-items-center  d-flex flex-column">
             <div class="itenary-box-container">
                 <div class="header d-flex justify-content-between px-4">
                     <div class="itenary-text-head">
@@ -854,7 +991,8 @@
                 <div class="modal-body px-3 pb-0">
                     <div class="row">
                         <div class="col-12 col-lg-5 pt-1 pt-lg-5">
-                            <p class="faq-description ">Who was Captain Idahosa Okunbo to you? What impact did he have in your life?</p>
+                            <!-- <p class="faq-description text-left mb-0">Who was Captain Idahosa Okunbo to you? </p>
+                            <p class="faq-description text-right mb-0">What impact did he have in your life?</p> -->
                             <img src="/assets/img/hosa/capt-hosa.png" alt="hosa" class="img-fluid d-none d-lg-block" />
                         </div>
                         <div class="col-12 col-lg-7">
@@ -870,8 +1008,8 @@
                                   </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tributeMessage">Tribute Message</label>
-                                    <textarea class="form-control form-control-lg" id="tributeMessage" placeholder="your tribute message here..." rows="10"></textarea>
+                                    <label for="tributeMessage">What do you have to say about him?</label>
+                                    <textarea class="form-control form-control-lg" id="tributeMessage" placeholder="your tribute message here..." rows="7"></textarea>
                                         <div class="invalid-feedback">
                                             Please provide a message.
                                         </div>

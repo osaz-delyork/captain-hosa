@@ -152,76 +152,109 @@ let tributMessage = document.querySelector('#tributeMessage')
 let tributeForm = document.querySelector('#tributeForm')
 let tributeSubmitForm = document.querySelector('#tributeSubmit')
 
-tributeForm.addEventListener('submit', (e) => {
-    e.preventDefault()
-
-    let userName = '', userTributeMsg = ''
-
-
-    // validate name on submit
-    if(name.value.length === 0) {
-        name.classList.remove('is-valid')
-        name.classList.add('is-invalid')
-        return;
-    } else {
-        userName = name.value.trim()
-        name.classList.remove('is-invalid')
-        name.classList.add('is-valid')
-    }
-
-    if(tributMessage.value.length === 0) {
-        tributMessage.classList.remove('is-valid')
-        tributMessage.classList.add('is-invalid')
-        return;
-    } else {
-        userTributeMsg = tributMessage.value.trim()
-        tributMessage.classList.remove('is-invalid')
-        tributMessage.classList.add('is-valid')
-    }
-  
-    console.log({userName, userTributeMsg})
-
-    // submtting form data
-    const url = `https://${ASTRA_DB_ID}-${ASTRA_DB_REGION}.apps.astra.datastax.com/api/rest/v2/keyspaces/${ASTRA_DB_KEYSPACE}/tributes`
-
-    tributeSubmitForm.textContent = 'Submitting...'
-    tributeSubmitForm.disabled = true
-
-
-    axios.post(url, {
-        'id': uuidv4(),
-        'full_name': userName,
-        'message': userTributeMsg,
-        'is_visible': true,
-        'created': new Date()
-    }, {
-        headers: {
-            'Content-Type': 'application/json',
-            'x-cassandra-token': ASTRA_DB_APPLICATION_TOKEN
-        }
-    })
-    .then((value) => {
-        console.log(value)
-        tributeSubmitForm.disabled = false
-        name.value = ''
-        tributMessage.value = ''
-        tributeSubmitForm.textContent = 'Submitted'
-        tributeSubmitForm.classList.remove('btn-primary')
-        tributeSubmitForm.classList.add('btn-success')
-
-        setTimeout(function () {
-            tributeSubmitForm.textContent = 'Submit Message'
-            tributeSubmitForm.classList.add('btn-primary')
-            tributeSubmitForm.classList.remove('btn-success')
-        }, 2000)
-    })
-    .catch((error) => {
-        console.log(error)
-        tributeSubmitForm.disabled = false
-        tributeSubmitForm.textContent = 'Submit Message'
-    })
+if(location.pathname === '/') {
+    tributeForm.addEventListener('submit', (e) => {
+        e.preventDefault()
     
-})
+        let userName = '', userTributeMsg = ''
+    
+    
+        // validate name on submit
+        if(name.value.length === 0) {
+            name.classList.remove('is-valid')
+            name.classList.add('is-invalid')
+            return;
+        } else {
+            userName = name.value.trim()
+            name.classList.remove('is-invalid')
+            name.classList.add('is-valid')
+        }
+    
+        if(tributMessage.value.length === 0) {
+            tributMessage.classList.remove('is-valid')
+            tributMessage.classList.add('is-invalid')
+            return;
+        } else {
+            userTributeMsg = tributMessage.value.trim()
+            tributMessage.classList.remove('is-invalid')
+            tributMessage.classList.add('is-valid')
+        }
+      
+        console.log({userName, userTributeMsg})
+    
+        // submtting form data
+        const url = `https://${ASTRA_DB_ID}-${ASTRA_DB_REGION}.apps.astra.datastax.com/api/rest/v2/keyspaces/${ASTRA_DB_KEYSPACE}/tributes`
+    
+        tributeSubmitForm.textContent = 'Submitting...'
+        tributeSubmitForm.disabled = true
+    
+    
+        axios.post(url, {
+            'id': uuidv4(),
+            'full_name': userName,
+            'message': userTributeMsg,
+            'is_visible': true,
+            'created': new Date()
+        }, {
+            headers: {
+                'Content-Type': 'application/json',
+                'x-cassandra-token': ASTRA_DB_APPLICATION_TOKEN
+            }
+        })
+        .then((value) => {
+            console.log(value)
+            tributeSubmitForm.disabled = false
+            name.value = ''
+            tributMessage.value = ''
+            tributeSubmitForm.textContent = 'Submitted'
+            tributeSubmitForm.classList.remove('btn-primary')
+            tributeSubmitForm.classList.add('btn-success')
+    
+            setTimeout(function () {
+                tributeSubmitForm.textContent = 'Submit Message'
+                tributeSubmitForm.classList.add('btn-primary')
+                tributeSubmitForm.classList.remove('btn-success')
+            }, 2000)
+        })
+        .catch((error) => {
+            console.log(error)
+            tributeSubmitForm.disabled = false
+            tributeSubmitForm.textContent = 'Submit Message'
+        })
+        
+    })
+}
+
+
+
+let triubes = []
+
+// fetch tibute lists
+function onFetchTributes() {
+
+    const url = `https://${ASTRA_DB_ID}-${ASTRA_DB_REGION}.apps.astra.datastax.com/api/rest/v2/keyspaces/${ASTRA_DB_KEYSPACE}/tributes/rows`
+    
+    try {
+
+        axios.get(url,{
+            headers: {
+                'Accept': '*/*',
+                'Content-Type': 'application/json',
+                'x-cassandra-token': ASTRA_DB_APPLICATION_TOKEN
+            }
+        }).then((response) => {
+           
+            if(response && response.status === 200 && response.data ) {
+                triubes.concat(response.data.data)
+            } else throw new Error('Failed to fetch data')
+        })
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+window.onload = onFetchTributes
 
 // Embedded Video Player
 
@@ -243,34 +276,34 @@ tributeForm.addEventListener('submit', (e) => {
 // }
 
 // autoPlay()
-// $(document).ready(function(){
-//     /* Get iframe src attribute value i.e. YouTube video url
-//     and store it in a variable */
-//     var url = $("#coronationPlayer").attr('src');
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#coronationPlayer").attr('src');
     
-//     /* Remove iframe src attribute on page load to
-//     prevent autoplay in background */
-//     $("#coronationPlayer").attr('src', '');
+    /* Remove iframe src attribute on page load to
+    prevent autoplay in background */
+    $("#coronationPlayer").attr('src', '');
     
-//     /* Assign the initially stored url back to the iframe src
-//     attribute when modal is displayed */
-//     $("#playerModal").on('shown.bs.modal', function(){
-//         $("#coronationPlayer").attr('src', url);
-//     });
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed */
+    $("#playerModal").on('shown.bs.modal', function(){
+        $("#coronationPlayer").attr('src', url);
+    });
     
-//     /* Assign empty url value to the iframe src attribute when
-//     modal hide, which stop the video playing */
-//     $("#playerModal").on('hide.bs.modal', function(){
-//         $("#coronationPlayer").attr('src', '');
-//     });
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#playerModal").on('hide.bs.modal', function(){
+        $("#coronationPlayer").attr('src', '');
+    });
 
-//     // $(".modal-backdrop").on('click', function() {
-//     //     console.log('i am clicked!!!!')
-//     //     $("#coronationPlayer").attr('src', '');
-//     //     $(this).hide();
-//     // })
+    // $(".modal-backdrop").on('click', function() {
+    //     console.log('i am clicked!!!!')
+    //     $("#coronationPlayer").attr('src', '');
+    //     $(this).hide();
+    // })
 
-//     // document.querySelector('.modal-backdrop').addEventListener('click', function() {
-//     //     alert('Clicked!!!')
-//     // })
-// });
+    // document.querySelector('.modal-backdrop').addEventListener('click', function() {
+    //     alert('Clicked!!!')
+    // })
+});
