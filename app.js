@@ -17,6 +17,8 @@
 // 		showSeconds: true
 // 	});
 
+AOS.init();
+
 var clock = $('.clock').FlipClock({
     clockFace: 'DailyCounter',
     countdown: true,
@@ -307,3 +309,22 @@ $(document).ready(function(){
     //     alert('Clicked!!!')
     // })
 });
+
+
+
+
+$(document).ready(function(){
+
+    $(".fancybox").fancybox({
+          openEffect: "none",
+          closeEffect: "none"
+      });
+      
+      $(".zoom").hover(function(){
+          
+          $(this).addClass('transition');
+      }, function(){
+          
+          $(this).removeClass('transition');
+      });
+  });

@@ -112,6 +112,11 @@ main {
     /* z-index: 5; */
 }
 
+
+.section__title {
+    font-family: 'Vensfolk' !important;
+}
+
 /* NavBar */
 
 .navbar-brand {
@@ -667,7 +672,7 @@ main {
 }
 
 .rsvp .body {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     letter-spacing: 2px;
     font-weight: 100;
 }
@@ -1346,7 +1351,7 @@ h1.text-black {
     background-size: cover;
     /* background-attachment: fixed; */
     background-position: top top;
-    padding: 20rem 0;
+    padding: var(--spacing-200) 0;
     position: relative;
 }
 
@@ -1358,7 +1363,7 @@ h1.text-black {
     background-color: rgba(0, 0, 0, .3);
 }
 
-.player button {
+.player #videoPlayerBtn {
     border: none;
     background-color: var(--cool-blue);
     padding: 1.5rem;
@@ -1373,7 +1378,7 @@ h1.text-black {
     outline: none !important;
 }
 
-.player button::after {
+.player #videoPlayerBtn::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1386,12 +1391,12 @@ h1.text-black {
     animation: pulse 1000ms ease  infinite ;
 }
 
-.player button:hover{
+.player #videoPlayerBtn:hover{
     background-color: var(--royal-blue);
     box-shadow: 0 0 20px rgba(24, 29, 36, 0.8);
 }
 
-.player button:hover::after {
+.player #videoPlayerBtn:hover::after {
     animation-play-state: paused;
 }
 
@@ -1400,6 +1405,58 @@ h1.text-black {
     width: 25px;
     height: 25px;
 }
+
+
+
+/* Media Gallery */
+#demo {
+height:100%;
+position:relative;
+overflow:hidden;
+}
+
+.gallery-section {
+    background: var(--white-50);
+    padding: var(--spacing-200) 0;
+}
+
+.thumb{
+    margin-bottom: 30px;
+}
+
+.page-top{
+    margin-top:85px;
+}
+
+img.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+        
+ 
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.modal-header {
+
+    border-bottom: none;
+}
+.modal-title {
+    color:#000;
+}
+.modal-footer{
+    display:none;  
+}
+
 
 @keyframes pulse {
     0%{
