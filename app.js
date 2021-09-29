@@ -154,7 +154,7 @@ let tributMessage = document.querySelector('#tributeMessage')
 let tributeForm = document.querySelector('#tributeForm')
 let tributeSubmitForm = document.querySelector('#tributeSubmit')
 
-if(location.pathname === '/') {
+
     tributeForm.addEventListener('submit', (e) => {
         e.preventDefault()
     
@@ -225,7 +225,7 @@ if(location.pathname === '/') {
         })
         
     })
-}
+
 
 
 

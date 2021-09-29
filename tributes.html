@@ -5,32 +5,261 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" />
-    <title>Welcome</title>
+    <title>Tributes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://unpkg.com/@pqina/flip/dist/flip.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="   background: var(--white-50) !important;">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top olu-navbar">
+            <div class='container'>
+            <a class="navbar-brand" href="index.html">
+                <img src="/assets/img/hosa/brand-logo.png" alt="logo"  width="40px" height="40px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <span class="hamburger"></span>
+              <span class="hamburger"></span>
+              <span class="hamburger"></span> -->
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#biography">Biography</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#philanthropy">Philanthropy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#tributes">Tributes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#interment">FUNERAL & INTERMENT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#protocols">COVID-19 Protocols</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#player">Service Song</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#faq">FAQs</a>
+                </li> -->
+              </ul>
+            </div>
+        </div>
+          </nav>
+
+    <div class="container  tribute-page-wrapper">
+          <h1 class="text-center section__title">Tributes To Cappi</h1>
+        <div class="row mt-5">
+            <div class="col-sm-12 col-lg-4 mb-5">
+                    <div class="card shadow rounded">
+                        <div class="d-flex p-3">
+                            <div class="img">
+                                <img src="https://randomuser.me/api/portraits/women/29.jpg" class="img-fluid pr-3 rounded-circle" />
+                            </div>
+                            <div class="content d-flex flex-column justify-content-between"> 
+                                 <p>Lorem ipsum dolor sit amet, dklds klsdd dsmdsmc ldsle ,dddlsdl ,sdksdkldk . dkdskl dsddri.</p>
+                                 <h5 class="text-right section__title  mb-0 mt-5">Penny Watson</h5>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 mb-5">
+                    <div class="card shadow rounded">
+                        <div class="d-flex p-3">
+                            <div class="img">
+                                <img src="https://randomuser.me/api/portraits/men/29.jpg" class="img-fluid pr-3 rounded-circle" />
+                            </div>
+                            <div class="content d-flex flex-column justify-content-between"> 
+                                 <p>Lorem ipsum dolor sit amet, dklds klsdd dsmdsmc ldsle ,dddlsdl ,sdksdkldk . dkdskl dsddri.</p>
+                                 <h5 class="text-right section__title mb-0 mt-5">Penny Watson</h5>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 mb-5">
+                    <div class="card shadow rounded">
+                        <div class="d-flex p-3">
+                            <div class="img">
+                                <img src="https://randomuser.me/api/portraits/men/28.jpg" class="img-fluid pr-3 rounded-circle" />
+                            </div>
+                            <div class="content d-flex flex-column justify-content-between"> 
+                                 <p>Lorem ipsum dolor sit amet, dklds klsdd dsmdsmc ldsle ,dddlsdl ,sdksdkldk . dkdskl dsddri.</p>
+                                 <h5 class="text-right section__title  mb-0 mt-5">Penny Watson</h5>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 mb-5">
+                    <div class="card shadow rounded">
+                        <div class="d-flex p-3">
+                            <div class="img">
+                                <img src="https://randomuser.me/api/portraits/women/29.jpg" class="img-fluid pr-3 rounded-circle" />
+                            </div>
+                            <div class="content d-flex flex-column justify-content-between"> 
+                                 <p>Lorem ipsum dolor sit amet, dklds klsdd dsmdsmc ldsle ,dddlsdl ,sdksdkldk . dkdskl dsddri.</p>
+                                 <h5 class="text-right section__title  mb-0 mt-5">Penny Watson</h5>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 mb-5">
+                    <div class="card shadow rounded">
+                        <div class="d-flex p-3">
+                            <div class="img">
+                                <img src="https://randomuser.me/api/portraits/men/29.jpg" class="img-fluid pr-3 rounded-circle" />
+                            </div>
+                            <div class="content d-flex flex-column justify-content-between"> 
+                                 <p>Lorem ipsum dolor sit amet, dklds klsdd dsmdsmc ldsle ,dddlsdl ,sdksdkldk . dkdskl dsddri.</p>
+                                 <h5 class="text-right section__title mb-0 mt-5">Penny Watson</h5>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 mb-5">
+                    <div class="card shadow rounded">
+                        <div class="d-flex p-3">
+                            <div class="img">
+                                <img src="https://randomuser.me/api/portraits/men/28.jpg" class="img-fluid pr-3 rounded-circle" />
+                            </div>
+                            <div class="content d-flex flex-column justify-content-between"> 
+                                 <p>Lorem ipsum dolor sit amet, dklds klsdd dsmdsmc ldsle ,dddlsdl ,sdksdkldk . dkdskl dsddri.</p>
+                                 <h5 class="text-right section__title  mb-0 mt-5">Penny Watson</h5>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
 
 
 
-    <h3>This is the tributes page</h3>
+            <!-- Modal -->
+            <div class="modal fade mt-5" id="tributeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title section__title" id="exampleModalLabel">Tributes to Cappi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+    
+                    <div class="modal-body px-3 pb-0">
+                        <div class="row">
+                            <div class="col-12 col-lg-5 pt-1 pt-lg-5">
+                                <!-- <p class="faq-description text-left mb-0">Who was Captain Idahosa Okunbo to you? </p>
+                                <p class="faq-description text-right mb-0">What impact did he have in your life?</p> -->
+                                <img src="/assets/img/hosa/capt-hosa.png" alt="hosa" class="img-fluid d-none d-lg-block" />
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <!-- <div>           
+                                    <p class="faq-description ">Share your story with us. Email us: info@captainhosa.com.</p>
+                                </div> -->
+                                <form id="tributeForm" class="pt-3 pt-lg-4">
+                                    <div class="form-group">
+                                      <label for="formGroupExampleInput">Your Name</label>
+                                      <input type="text" class="form-control form-control-lg" id="userName" placeholder="your name is...">
+                                      <div class="invalid-feedback">
+                                        Please provide a name.
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tributeMessage">What do you have to say about him?</label>
+                                        <textarea class="form-control form-control-lg" id="tributeMessage" placeholder="your tribute message here..." rows="7"></textarea>
+                                            <div class="invalid-feedback">
+                                                Please provide a message.
+                                            </div>
+                                      </div>
+                                    <button type="submit" id="tributeSubmit" class="btn btn-lg btn-block btn-primary mb-3 mb-lg-0 py-3">
+                                        Submit Message
+                                    </button>
+                                  </form>
+                            </div>
+                        </div>
+                     
+                    </div>
+                    <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Pay Tribute</button> 
+                    </div> -->
+                </div>
+                </div>
+            </div>
+            <!-- End Modal -->
 
 
+            <button data-toggle="modal" data-target="#tributeModal" style="right: 2%; top: 10%; z-index: 100;" class="position-fixed btn btn-secondary btn-lg mx-auto my-3 d-block  py-3">
+                Pay Tribute
+            </button>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container py-3">
+            <p class="text-center text-white" style="font-size: 1.5rem;">
+                Join us as we commemorate the Captain’s Last Flight To Glory
+                </p>
+            <div class="row mb-5">
+                 <div class="col-12 text-center">
+                     <div class="social-wrapper mx-auto">
+                        <!-- <div class="social">
+                            <a href="#" target="_blank" rel="noreferrer noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                  </svg>
+                            </a>
+                          </div> -->
+                          <!-- <div class="social">
+                            <a href="#" target="_blank" rel="noreferrer noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                  </svg>
+                            </a>
+                          </div> -->
+                          <div class="social">
+                                <a href="#" target="_blank" rel="noreferrer noopener"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                                      </svg>
+                                </a>
+                          </div>
+                     </div>         
+                 </div>
+            </div>
+            <!-- <hr style="color: white;" /> -->
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-12 col-sm-12 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one light-gray-text2">
+                    <div class="hcode-footer-copyright vertical-align-middle display-inline-block"> <div class="textwidget text-white">© 2021 Captain Idahosa Wells Okunbo. <br>Developed by <a href="https://www.delyorkinternational.com/" target="_blank" class="light-gray-text2"  rel="noopener">Del-York International.</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/@astrajs/rest@0.1.0/src/rest.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="app.js" type="text/javascript"> </script>
 </body>
 </html>
