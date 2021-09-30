@@ -205,12 +205,39 @@ let tributeSubmitForm = document.querySelector('#tributeSubmit')
         })
         .then((value) => {
             console.log(value)
-            tributeSubmitForm.disabled = false
-            name.value = ''
-            tributMessage.value = ''
-            tributeSubmitForm.textContent = 'Submitted'
-            tributeSubmitForm.classList.remove('btn-primary')
-            tributeSubmitForm.classList.add('btn-success')
+         
+
+
+            // if location is tribute html fetch the data
+            if(location.pathname === '/tributes.html') {
+                const  tributeParent = document.querySelector('#tributes')
+                let childElement =  `
+                <div class="col-sm-12 col-lg-4 mb-5">
+                <div class="card shadow rounded">
+                    <div class="d-flex p-3">
+                        <div class="img" style="width: 80px; height: 80px;">
+                            <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y" style="width: 80px;" class=" pr-3 rounded-circle" />
+                        </div>
+                        <div class="content d-flex flex-column justify-content-between w-100"> 
+                             <p>${tributMessage.value}</p>
+                             <h5 class="text-right section__title  mb-0 mt-5">${name.value}</h5>
+                            </div>
+                        </div>
+                        </div>
+                </div>`
+
+                tributeParent.lastElementChild.insertAdjacentHTML('afterend', childElement)
+
+                tributeSubmitForm.disabled = false
+                name.value = ''
+                tributMessage.value = ''
+                tributeSubmitForm.textContent = 'Submitted'
+                tributeSubmitForm.classList.remove('btn-primary')
+                tributeSubmitForm.classList.add('btn-success')
+
+                // onFetchTributes()
+                
+            }
     
             setTimeout(function () {
                 tributeSubmitForm.textContent = 'Submit Message'
@@ -228,8 +255,34 @@ let tributeSubmitForm = document.querySelector('#tributeSubmit')
 
 
 
-
-let triubes = []
+function populateTributes(data) {
+    const  tributeParent = document.querySelector('#tributes')
+    let childrenElement = ''
+    // console.log(tributeParent)
+    if(data && Array.isArray(data)) {
+      childrenElement =  data.map(t => {
+            return (
+                `
+                <div class="col-sm-12 col-lg-4 mb-5">
+                <div class="card shadow rounded">
+                    <div class="d-flex p-3">
+                        <div class="img" style="width: 80px; height: 80px;">
+                            <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y" style="width: 80px;" class=" pr-3 rounded-circle" />
+                        </div>
+                        <div class="content d-flex flex-column justify-content-between w-100"> 
+                             <p>${t.message}</p>
+                             <h5 class="text-right section__title  mb-0 mt-5">${t.full_name}</h5>
+                        </div>
+                    </div>
+                </div>
+        </div>`
+            )
+        }).join('')
+    }
+    // <p class="text-right section__title" style="font-size: 10px;">Cappi's Auditor</p>
+    tributeParent.lastElementChild.insertAdjacentHTML('afterend', childrenElement)
+    // tributeParent.appendChild
+}
 
 // fetch tibute lists
 function onFetchTributes() {
@@ -247,7 +300,8 @@ function onFetchTributes() {
         }).then((response) => {
            
             if(response && response.status === 200 && response.data ) {
-                triubes.concat(response.data.data)
+                // console.log(response.data)
+               populateTributes(response.data.data)
             } else throw new Error('Failed to fetch data')
         })
 
@@ -256,7 +310,11 @@ function onFetchTributes() {
     }
 }
 
-window.onload = onFetchTributes
+if(location.pathname === '/tributes.html'){
+    window.onload = onFetchTributes
+}
+
+
 
 // Embedded Video Player
 
@@ -327,4 +385,32 @@ $(document).ready(function(){
           
           $(this).removeClass('transition');
       });
+  });
+
+
+
+
+
+  const slider = tns({
+    container: '.my-slider',
+    loop: true,
+    items: 1,
+    slideBy: 'page',
+    nav: false,    
+    autoplay: false,
+    speed: 400,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    lazyload: true,
+    controlsContainer: "#customize-controls",
+    responsive: {
+        640: {
+            items: 2,
+        },
+        
+        768: {
+            items: 3,
+        }
+    }
+
   });
